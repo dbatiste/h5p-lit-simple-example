@@ -1,0 +1,13 @@
+{
+	"browsers": [
+		{
+			"name": "Chromium",
+			"version": 133
+		}
+	],
+	"system": {
+		"platform": "linux",
+		"release": "6.8.0-1021-azure",
+		"arch": "x64"
+	}
+}

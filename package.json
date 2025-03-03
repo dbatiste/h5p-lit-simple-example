@@ -1,0 +1,33 @@
+{
+	"name": "@dbatiste/h5p-lit-simple-example",
+	"version": "1.0.0",
+	"description": "A simple H5P library implemented using LitElement",
+	"private": true,
+	"type": "module",
+	"repository": "https://github.com/dbatiste/h5p-lit-simple-example.git",
+	"scripts": {
+		"build": "rimraf dist && rollup -c rollup.config.js",
+		"lint": "npm run lint:eslint && npm run lint:style",
+		"lint:eslint": "eslint .",
+		"lint:style": "stylelint \"**/*.{js,html}\" --ignore-path .gitignore",
+		"test": "npm run lint && npm run test:unit && npm run test:axe",
+		"test:axe": "d2l-test-runner axe --chrome --config ./test-runner.config.js",
+		"test:unit": "d2l-test-runner --config ./test-runner.config.js",
+		"test:vdiff": "d2l-test-runner vdiff --config ./test-runner.config.js --timeout 10000"
+	},
+	"author": "D2L Corporation",
+	"license": "Apache-2.0",
+	"devDependencies": {
+		"@brightspace-ui/stylelint-config": "^1",
+		"@brightspace-ui/testing": "^1.28.0",
+		"@rollup/plugin-babel": "^6",
+		"@rollup/plugin-node-resolve": "^16",
+		"@rollup/plugin-terser": "^0.4",
+		"eslint": "^9",
+		"eslint-config-brightspace": "^2",
+		"lit": "^3",
+		"rimraf": "^6",
+		"rollup": "^4",
+		"stylelint": "^16"
+	}
+}

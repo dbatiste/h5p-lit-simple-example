@@ -1,0 +1,25 @@
+[ 
+  {
+    "label": "Image",
+    "name": "image",
+    "type": "image",
+    "optional": false,
+    "description": "Image for the example."
+  },
+  { 
+    "label": "Alt Text",
+    "name": "imageAlt",
+    "type": "text",
+    "default": "",
+    "optional": false,
+    "description": "Alternate text for the image. Important for accessibility!"
+  },
+  { 
+    "label": "Message",
+    "name": "message",
+    "type": "text",
+    "default": "",
+    "optional": true,
+    "description": "A message to go with the image."
+  }
+]

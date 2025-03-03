@@ -1,0 +1,18 @@
+{
+	"title": "Lit Simple Example",
+	"description": "A simple H5P library implemented using LitElement",
+	"majorVersion": 1,
+	"minorVersion": 0,
+	"patchVersion": 0,
+	"runnable": 1,
+	"author": "D2L",
+	"license": "Apache-2.0",
+	"machineName": "H5P.LitSimpleExample",
+	"coreApi": {
+	  "majorVersion": 1,
+	  "minorVersion": 0
+	},
+	"preloadedJs": [
+		{ "path": "dist/lit-simple-example.js" }
+	]
+}
